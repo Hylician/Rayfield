@@ -1692,6 +1692,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 			function InputSettings:Set(text) --Doesnt fire the event
 				Input.InputFrame.InputBox.Text = text
 			end
+			function InputSettings:Get() --Doesnt fire the event
+				return Input.InputFrame.InputBox.Text
+			end
 			return InputSettings
 		end
 
