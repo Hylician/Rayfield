@@ -115,7 +115,7 @@ local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
 local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hylician/Rayfield/main/ui"))() --game:GetObjects("rbxassetid://10804731440")[1]
-
+Rayfield:WaitForChild("Main", 200)
 Rayfield.Enabled = false
 
 
