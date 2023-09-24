@@ -5,19 +5,18 @@ rayfield.IgnoreGuiInset = true
 rayfield.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 rayfield.ResetOnSpawn = false
 
-local main = Instance.new("Frame")
-main.Name = "Main"
-main.AnchorPoint = Vector2.new(0.5, 0.5)
-main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-main.BorderSizePixel = 0
-main.Position = UDim2.fromScale(0.5, 0.5)
-main.Size = UDim2.fromOffset(500, 475)
+local rayfieldmain = Instance.new("Frame")
+rayfieldmain.Name = "Main"
+rayfieldmain.AnchorPoint = Vector2.new(0.5, 0.5)
+rayfieldmain.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+rayfieldmain.BorderSizePixel = 0
+rayfieldmain.Position = UDim2.fromScale(0.5, 0.5)
+rayfieldmain.Size = UDim2.fromOffset(500, 475)
 
 local uICorner = Instance.new("UICorner")
 uICorner.Name = "UICorner"
 uICorner.CornerRadius = UDim.new(0, 9)
-uICorner.Parent = main
-
+uICorner.Parent = rayfieldmain
 
 local topbar = Instance.new("Frame")
 topbar.Name = "Topbar"
@@ -44,9 +43,9 @@ cornerRepair.Parent = topbar
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Rayfield Interface Suite"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -126,7 +125,7 @@ uIStroke.Color = Color3.fromRGB(65, 65, 65)
 uIStroke.Transparency = 1
 uIStroke.Parent = topbar
 
-topbar.Parent = main
+topbar.Parent = rayfieldmain
 
 local tabList = Instance.new("ScrollingFrame")
 tabList.Name = "TabList"
@@ -164,9 +163,9 @@ uIStroke.Parent = template
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Automation"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -251,7 +250,7 @@ uIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 uIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 uIListLayout.Parent = tabList
 
-tabList.Parent = main
+tabList.Parent = rayfieldmain
 
 local shadow = Instance.new("Frame")
 shadow.Name = "Shadow"
@@ -277,7 +276,7 @@ image.Size = UDim2.fromScale(1.6, 1.3)
 image.ZIndex = 0
 image.Parent = shadow
 
-shadow.Parent = main
+shadow.Parent = rayfieldmain
 
 local loadingFrame = Instance.new("Frame")
 loadingFrame.Name = "LoadingFrame"
@@ -291,9 +290,9 @@ loadingFrame.ZIndex = 30
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Bold,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Bold,
+	Enum.FontStyle.Normal
 )
 title.Text = "Rayfield Interface Library"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -340,7 +339,7 @@ version.Position = UDim2.fromScale(0.674, 0.912)
 version.Size = UDim2.fromOffset(134, 13)
 version.Parent = loadingFrame
 
-loadingFrame.Parent = main
+loadingFrame.Parent = rayfieldmain
 
 local elements = Instance.new("Frame")
 elements.Name = "Elements"
@@ -392,9 +391,9 @@ uIStroke.Parent = button
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Reset Aimbot System"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -413,9 +412,9 @@ title.Parent = button
 local elementIndicator = Instance.new("TextLabel")
 elementIndicator.Name = "ElementIndicator"
 elementIndicator.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 elementIndicator.Text = "button"
 elementIndicator.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -466,9 +465,9 @@ uICorner1.Parent = color
 local title1 = Instance.new("TextLabel")
 title1.Name = "Title"
 title1.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title1.Text = "Color"
 title1.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -530,9 +529,9 @@ uICorner.Parent = toggle
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Enable Tracers"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -664,9 +663,9 @@ uICorner.Parent = dropdown
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Dropdown"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -736,9 +735,9 @@ uIStroke1.Parent = template1
 local title1 = Instance.new("TextLabel")
 title1.Name = "Title"
 title1.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title1.Text = "Option"
 title1.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -774,9 +773,9 @@ list.Parent = dropdown
 local selected = Instance.new("TextLabel")
 selected.Name = "Selected"
 selected.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 selected.Text = "Option #1"
 selected.TextColor3 = Color3.fromRGB(150, 150, 150)
@@ -845,9 +844,9 @@ uICorner.Parent = input
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Target Player"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -880,9 +879,9 @@ local inputBox = Instance.new("TextBox")
 inputBox.Name = "InputBox"
 inputBox.ClearTextOnFocus = false
 inputBox.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 inputBox.PlaceholderText = "Dynamic Input"
 inputBox.Text = ""
@@ -930,9 +929,9 @@ uIStroke.Parent = paragraph
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Paragraph Title"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -951,9 +950,9 @@ title.Parent = paragraph
 local content = Instance.new("TextLabel")
 content.Name = "Content"
 content.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 content.Text = "Paragraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph ContentParagraph Content"
 content.TextColor3 = Color3.fromRGB(180, 180, 180)
@@ -990,9 +989,9 @@ uIStroke1.Parent = label
 local title1 = Instance.new("TextLabel")
 title1.Name = "Title"
 title1.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title1.TextColor3 = Color3.fromRGB(240, 240, 240)
 title1.TextScaled = true
@@ -1024,9 +1023,9 @@ uICorner.Parent = keybind
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Target Keybind"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -1059,9 +1058,9 @@ local keybindBox = Instance.new("TextBox")
 keybindBox.Name = "KeybindBox"
 keybindBox.ClearTextOnFocus = false
 keybindBox.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 keybindBox.PlaceholderText = "Keybind"
 keybindBox.Text = "Q"
@@ -1099,9 +1098,9 @@ sectionTitle.Size = UDim2.new(1, 0, 0, 15)
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Aimbot"
 title.TextColor3 = Color3.fromRGB(175, 175, 175)
@@ -1133,9 +1132,9 @@ uICorner.Parent = slider
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "ESP Range"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -1200,9 +1199,9 @@ progress.Parent = main
 local information = Instance.new("TextLabel")
 information.Name = "Information"
 information.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 information.Text = "750 studs"
 information.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -1380,9 +1379,9 @@ local inputBox = Instance.new("TextBox")
 inputBox.Name = "InputBox"
 inputBox.ClearTextOnFocus = false
 inputBox.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 inputBox.PlaceholderText = "hex"
 inputBox.Text = ""
@@ -1412,25 +1411,25 @@ colorSlider.Size = UDim2.fromOffset(173, 12)
 local uIGradient = Instance.new("UIGradient")
 uIGradient.Name = "UIGradient"
 uIGradient.Color = ColorSequence.new({
-  ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
-  ColorSequenceKeypoint.new(0.0557, Color3.fromRGB(255, 85, 0)),
-  ColorSequenceKeypoint.new(0.111, Color3.fromRGB(255, 170, 0)),
-  ColorSequenceKeypoint.new(0.167, Color3.fromRGB(254, 255, 0)),
-  ColorSequenceKeypoint.new(0.223, Color3.fromRGB(169, 255, 0)),
-  ColorSequenceKeypoint.new(0.279, Color3.fromRGB(84, 255, 0)),
-  ColorSequenceKeypoint.new(0.334, Color3.fromRGB(0, 255, 1)),
-  ColorSequenceKeypoint.new(0.39, Color3.fromRGB(0, 255, 87)),
-  ColorSequenceKeypoint.new(0.446, Color3.fromRGB(0, 255, 172)),
-  ColorSequenceKeypoint.new(0.501, Color3.fromRGB(0, 253, 255)),
-  ColorSequenceKeypoint.new(0.557, Color3.fromRGB(0, 168, 255)),
-  ColorSequenceKeypoint.new(0.613, Color3.fromRGB(0, 82, 255)),
-  ColorSequenceKeypoint.new(0.669, Color3.fromRGB(3, 0, 255)),
-  ColorSequenceKeypoint.new(0.724, Color3.fromRGB(88, 0, 255)),
-  ColorSequenceKeypoint.new(0.78, Color3.fromRGB(173, 0, 255)),
-  ColorSequenceKeypoint.new(0.836, Color3.fromRGB(255, 0, 251)),
-  ColorSequenceKeypoint.new(0.891, Color3.fromRGB(255, 0, 166)),
-  ColorSequenceKeypoint.new(0.947, Color3.fromRGB(255, 0, 81)),
-  ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0)),
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+	ColorSequenceKeypoint.new(0.0557, Color3.fromRGB(255, 85, 0)),
+	ColorSequenceKeypoint.new(0.111, Color3.fromRGB(255, 170, 0)),
+	ColorSequenceKeypoint.new(0.167, Color3.fromRGB(254, 255, 0)),
+	ColorSequenceKeypoint.new(0.223, Color3.fromRGB(169, 255, 0)),
+	ColorSequenceKeypoint.new(0.279, Color3.fromRGB(84, 255, 0)),
+	ColorSequenceKeypoint.new(0.334, Color3.fromRGB(0, 255, 1)),
+	ColorSequenceKeypoint.new(0.39, Color3.fromRGB(0, 255, 87)),
+	ColorSequenceKeypoint.new(0.446, Color3.fromRGB(0, 255, 172)),
+	ColorSequenceKeypoint.new(0.501, Color3.fromRGB(0, 253, 255)),
+	ColorSequenceKeypoint.new(0.557, Color3.fromRGB(0, 168, 255)),
+	ColorSequenceKeypoint.new(0.613, Color3.fromRGB(0, 82, 255)),
+	ColorSequenceKeypoint.new(0.669, Color3.fromRGB(3, 0, 255)),
+	ColorSequenceKeypoint.new(0.724, Color3.fromRGB(88, 0, 255)),
+	ColorSequenceKeypoint.new(0.78, Color3.fromRGB(173, 0, 255)),
+	ColorSequenceKeypoint.new(0.836, Color3.fromRGB(255, 0, 251)),
+	ColorSequenceKeypoint.new(0.891, Color3.fromRGB(255, 0, 166)),
+	ColorSequenceKeypoint.new(0.947, Color3.fromRGB(255, 0, 81)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0)),
 })
 uIGradient.Parent = colorSlider
 
@@ -1472,9 +1471,9 @@ colorSlider.Parent = colorPicker
 local title = Instance.new("TextLabel")
 title.Name = "Title"
 title.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 title.Text = "Color Picker"
 title.TextColor3 = Color3.fromRGB(240, 240, 240)
@@ -1524,9 +1523,9 @@ local inputBox1 = Instance.new("TextBox")
 inputBox1.Name = "InputBox"
 inputBox1.ClearTextOnFocus = false
 inputBox1.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 inputBox1.PlaceholderText = "G"
 inputBox1.Text = ""
@@ -1567,9 +1566,9 @@ local inputBox2 = Instance.new("TextBox")
 inputBox2.Name = "InputBox"
 inputBox2.ClearTextOnFocus = false
 inputBox2.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 inputBox2.PlaceholderText = "R"
 inputBox2.Text = ""
@@ -1611,9 +1610,9 @@ local inputBox3 = Instance.new("TextBox")
 inputBox3.Name = "InputBox"
 inputBox3.ClearTextOnFocus = false
 inputBox3.FontFace = Font.new(
-  "rbxasset://fonts/families/GothamSSm.json",
-  Enum.FontWeight.Medium,
-  Enum.FontStyle.Normal
+	"rbxasset://fonts/families/GothamSSm.json",
+	Enum.FontWeight.Medium,
+	Enum.FontStyle.Normal
 )
 inputBox3.PlaceholderText = "B"
 inputBox3.Text = ""
@@ -1656,7 +1655,7 @@ uIPageLayout.SortOrder = Enum.SortOrder.LayoutOrder
 uIPageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 uIPageLayout.Parent = elements
 
-elements.Parent = main
+elements.Parent = rayfieldmain
 
 local preview = Instance.new("Frame")
 preview.Name = "Preview"
@@ -1668,7 +1667,7 @@ preview.Position = UDim2.new(0.5, 0, 1, -50)
 preview.Size = UDim2.fromOffset(425, 246)
 preview.Visible = false
 
-preview.Parent = main
+preview.Parent = rayfieldmain
 
 local notice = Instance.new("Frame")
 notice.Name = "Notice"
@@ -2236,5 +2235,3 @@ close.Position = UDim2.fromScale(0.961, 0.2)
 close.Size = UDim2.fromOffset(21, 21)
 close.ZIndex = 5
 close.Parent = recommendSettings
-
-return rayfield
