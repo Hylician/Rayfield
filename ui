@@ -418,7 +418,7 @@ elementIndicator.FontFace = Font.new(
 	Enum.FontWeight.Medium,
 	Enum.FontStyle.Normal
 )
-elementIndicator.Text = "button"
+elementIndicator.Text = ""
 elementIndicator.TextColor3 = Color3.fromRGB(240, 240, 240)
 elementIndicator.TextScaled = true
 elementIndicator.TextSize = 14
