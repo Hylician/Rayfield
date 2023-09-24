@@ -18,6 +18,8 @@ uICorner.Name = "UICorner"
 uICorner.CornerRadius = UDim.new(0, 9)
 uICorner.Parent = rayfieldmain
 
+rayfieldmain.Parent = rayfieldmain
+
 local topbar = Instance.new("Frame")
 topbar.Name = "Topbar"
 topbar.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
